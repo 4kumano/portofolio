@@ -10,12 +10,10 @@
 
 <body x-data="{
     darkMode: localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
-}"
-    x-effect="
+}" x-effect="
         darkMode ? document.documentElement.classList.add('dark') : document.documentElement.classList.remove('dark');
         localStorage.setItem('theme', darkMode ? 'dark' : 'light');
-    "
-    class="bg-gray-50 text-gray-900 dark:bg-dark-bg dark:text-gray-100 transition-colors duration-300 antialiased">
+    " class="bg-gray-50 text-gray-900 dark:bg-dark-bg dark:text-gray-100 transition-colors duration-300 antialiased">
 
     <nav
         class="fixed top-0 w-full z-50 bg-white/80 dark:bg-dark-bg/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 transition-colors duration-300">
@@ -34,15 +32,14 @@
 
                     <button @click="darkMode = !darkMode"
                         class="p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:ring-2 hover:ring-primary transition-all text-gray-600 dark:text-yellow-300">
-                        <svg x-show="!darkMode" class="w-5 h-5" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
+                        <svg x-show="!darkMode" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z">
                             </path>
                         </svg>
 
-                        <svg x-show="darkMode" style="display: none;" class="w-5 h-5" fill="none"
-                            stroke="currentColor" viewBox="0 0 24 24">
+                        <svg x-show="darkMode" style="display: none;" class="w-5 h-5" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
                             </path>
