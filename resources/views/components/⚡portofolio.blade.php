@@ -116,7 +116,7 @@ new class extends Component {
                                 Frameworks & Libraries
                             </span>
                             <div class="flex flex-wrap gap-2">
-                                @foreach (['Codeigniter 4', 'Laravel', 'Livewire', 'Express.js'] as $skill)
+                                @foreach (['Codeigniter 4', 'Laravel', 'Livewire', 'Express.js', 'Tailwind CSS', 'Bootstrap'] as $skill)
                                     <span
                                         class="px-3 py-1 bg-emerald-50 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-300 text-sm rounded-md font-medium border border-emerald-100 dark:border-emerald-800 hover:scale-105 transition-transform cursor-default">
                                         {{ $skill }}
@@ -156,8 +156,8 @@ new class extends Component {
                     <div
                         class="group bg-white dark:bg-dark-card rounded-xl overflow-hidden border border-gray-200 dark:border-gray-800 hover:shadow-xl hover:border-primary/50 transition duration-300">
                         <div
-                            class="h-48 bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center p-8">
-                            <img src="https://ww2.weareimagi.com/_nuxt/mytix.DBLtJMKB.svg" alt="MyTix Logo"
+                            class="h-48 bg-gradient-to-br from-white via-blue-100 to-blue-500 dark:from-gray-800 dark:via-gray-700 dark:to-blue-900 flex items-center justify-center p-8 border-b border-gray-100 dark:border-gray-800">
+                            <img src="{{ asset('storage/logo/Logo-MyTix.svg') }}" alt="MyTix Logo"
                                 class="h-24 w-auto object-contain drop-shadow-lg transform group-hover:scale-110 transition duration-500">
                         </div>
                         <div class="p-6">
@@ -228,9 +228,40 @@ new class extends Component {
                     </div>
 
                     <div
+                        class="group bg-white dark:bg-dark-card rounded-xl overflow-hidden border border-gray-200 dark:border-gray-800 hover:shadow-xl hover:border-primary/50 transition duration-300">
+                        <div
+                            class="h-48 bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center p-8">
+                            <img src="{{ asset('storage/logo/logo-Anadex.svg') }}" alt="Anadex Logo"
+                                class="h-24 w-auto object-contain drop-shadow-lg transform group-hover:scale-110 transition duration-500">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-4">
+                                <h3 class="text-xl font-bold group-hover:text-primary transition">Anadex</h3>
+                                <span
+                                    class="bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-xs px-2 py-1 rounded">Platform</span>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-4"
+                                title="Platform voting lagu favoritmu untuk Utadensha & Odottemita, dukung Waifu/Husbando idaman.">
+                                Platform voting lagu favorit untuk Utadensha & Odottemita, dukung
+                                Waifu/Husbando idaman.
+                            </p>
+                            <div class="flex justify-between items-end">
+                                <div class="flex gap-2 text-xs text-gray-500 font-mono flex-wrap">
+                                    <span>#Laravel</span> <span>#Livewire</span> <span>#TailwindCSS</span>
+                                </div>
+                                <a href="#" onclick="event.preventDefault()"
+                                    class="text-xs font-semibold text-gray-400 cursor-not-allowed flex items-center gap-1"
+                                    title="Belum open publik">
+                                    Segera Hadir <span class="text-xs">🔒</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
                         class="group bg-white dark:bg-dark-card rounded-xl overflow-hidden border border-gray-200 dark:border-gray-800 hover:shadow-xl hover:border-primary/50 transition duration-300 md:col-span-2 lg:col-span-3 flex flex-col md:flex-row">
                         <div class="h-48 md:h-auto md:w-64 bg-gray-800 flex items-center justify-center p-8">
-                            <img src="https://ww2.weareimagi.com/_nuxt/8-small-white.Dhfr9RpH.svg" alt="WeAreImagi Logo"
+                            <img src="{{ asset('storage/logo/Logo-WeAreImagi.webp') }}" alt="WeAreImagi Logo"
                                 class="h-24 w-auto object-contain transform group-hover:scale-110 transition duration-500">
                         </div>
                         <div class="p-6 flex flex-col justify-center flex-1">
@@ -249,8 +280,9 @@ new class extends Component {
                                 <strong>Role:</strong> Developer & IT Support
                             </p>
                             <p class="text-gray-600 dark:text-gray-400 text-sm">
-                                Bertanggung jawab mengelola infrastruktur IT saat event berlangsung, memastikan sistem
-                                ticketing berjalan lancar, dan menyediakan solusi teknis di lapangan.
+                                Bertanggung jawab mengelola infrastruktur IT saat event berlangsung, mengembangkan
+                                sistem
+                                ticketing (MyTix) dan platform Anadex, serta menyediakan solusi teknis di lapangan.
                             </p>
                         </div>
                     </div>
