@@ -81,12 +81,6 @@ new class extends Component {
                                 </div>
                             </li>
 
-                            {{-- <li
-                                class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-gray-200 dark:border-gray-700 pb-3 last:border-0">
-                                <span class="text-gray-500 dark:text-gray-400 text-sm uppercase">Pekerjaan</span>
-                                <span class="font-medium text-right">Staf TU - SMA Negeri 4 Banjarmasin</span>
-                            </li> --}}
-
                             <li
                                 class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-gray-200 dark:border-gray-700 pb-3 last:border-0">
                                 <span class="text-gray-500 dark:text-gray-400 text-sm uppercase">Hobi</span>
