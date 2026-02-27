@@ -20,7 +20,8 @@ new class extends Component {
             </div>
 
             <div class="container mx-auto px-4 relative z-10 text-center">
-                <div class="inline-block mb-4 px-4 py-1.5 rounded-full bg-primary/10 text-primary font-semibold text-sm">
+                <div
+                    class="inline-block mb-4 px-4 py-1.5 rounded-full bg-primary/10 text-primary font-semibold text-sm">
                     👋 Hello World, I am
                 </div>
                 <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">
@@ -29,7 +30,8 @@ new class extends Component {
                 </h1>
 
                 <div class="h-8 mb-8 text-xl md:text-2xl text-gray-600 dark:text-gray-300 font-mono"
-                    x-data="{ text: '', texts: ['Fullstack Developer', 'IT Support', 'Staff TU', 'Gamer'], idx: 0, char: 0, deleting: false }" x-init="setInterval(() => {
+                    x-data="{ text: '', texts: ['Fullstack Developer', 'IT Support', 'Staff TU', 'Gamer'], idx: 0, char: 0, deleting: false }"
+                    x-init="setInterval(() => {
                         let currentText = texts[idx];
                         if (deleting) {
                             text = currentText.substring(0, text.length - 1);
@@ -79,11 +81,11 @@ new class extends Component {
                                 </div>
                             </li>
 
-                            <li
+                            {{-- <li
                                 class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-gray-200 dark:border-gray-700 pb-3 last:border-0">
                                 <span class="text-gray-500 dark:text-gray-400 text-sm uppercase">Pekerjaan</span>
                                 <span class="font-medium text-right">Staf TU - SMA Negeri 4 Banjarmasin</span>
-                            </li>
+                            </li> --}}
 
                             <li
                                 class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-gray-200 dark:border-gray-700 pb-3 last:border-0">
