@@ -30,7 +30,7 @@ new class extends Component {
                 </h1>
 
                 <div class="h-8 mb-8 text-xl md:text-2xl text-gray-600 dark:text-gray-300 font-mono"
-                    x-data="{ text: '', texts: ['Fullstack Developer', 'IT Support', 'Staff TU', 'Gamer'], idx: 0, char: 0, deleting: false }"
+                    x-data="{ text: '', texts: ['Fullstack Developer', 'IT Support', 'Gamer', 'Anime Lovers', 'Coding', 'Jejepangan Enthusiast'], idx: 0, char: 0, deleting: false }"
                     x-init="setInterval(() => {
                         let currentText = texts[idx];
                         if (deleting) {
