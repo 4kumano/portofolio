@@ -19,8 +19,8 @@
         class="fixed top-0 w-full z-50 bg-white/80 dark:bg-dark-bg/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
-                <a href="/" wire:navigate class="text-2xl font-bold font-mono text-primary tracking-tighter">
-                    &lt;IF/&gt;
+                <a href="/" wire:navigate class="flex items-center transition-transform hover:scale-105">
+                    <img src="{{ asset('logo.svg') }}" alt="IF Logo" class="h-8 w-auto drop-shadow-sm" />
                 </a>
 
                 <div class="flex items-center gap-6">

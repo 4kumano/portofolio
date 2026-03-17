@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" width="120" height="40">
+  <style>
+    text {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 32px;
+      font-weight: bold;
+      fill: #6366f1; /* text-primary */
+      letter-spacing: -2px; /* tracking-tighter */
+    }
+  </style>
+  <text x="0" y="30">&lt;IF/&gt;</text>
+</svg>

@@ -20,8 +20,7 @@ new class extends Component {
             </div>
 
             <div class="container mx-auto px-4 relative z-10 text-center">
-                <div
-                    class="inline-block mb-4 px-4 py-1.5 rounded-full bg-primary/10 text-primary font-semibold text-sm">
+                <div class="inline-block mb-4 px-4 py-1.5 rounded-full bg-primary/10 text-primary font-semibold text-sm">
                     👋 Hello World, I am
                 </div>
                 <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">
@@ -30,8 +29,7 @@ new class extends Component {
                 </h1>
 
                 <div class="h-8 mb-8 text-xl md:text-2xl text-gray-600 dark:text-gray-300 font-mono"
-                    x-data="{ text: '', texts: ['Fullstack Developer', 'IT Support', 'Gamer', 'Anime Lovers', 'Coding', 'Jejepangan Enthusiast'], idx: 0, char: 0, deleting: false }"
-                    x-init="setInterval(() => {
+                    x-data="{ text: '', texts: ['Fullstack Developer', 'IT Support', 'Gamer', 'Anime Lovers', 'Coding', 'Jejepangan Enthusiast'], idx: 0, char: 0, deleting: false }" x-init="setInterval(() => {
                         let currentText = texts[idx];
                         if (deleting) {
                             text = currentText.substring(0, text.length - 1);
@@ -156,8 +154,8 @@ new class extends Component {
                     <div
                         class="group bg-white dark:bg-dark-card rounded-xl overflow-hidden border border-gray-200 dark:border-gray-800 hover:shadow-xl hover:border-primary/50 transition duration-300">
                         <div
-                            class="h-48 bg-gradient-to-br from-white via-blue-100 to-blue-500 dark:from-gray-800 dark:via-gray-700 dark:to-blue-900 flex items-center justify-center p-8 border-b border-gray-100 dark:border-gray-800">
-                            <img src="{{ asset('storage/logo/Logo-MyTix.svg') }}" alt="MyTix Logo"
+                            class="h-48 bg-linear-to-br from-white via-blue-100 to-blue-500 dark:from-gray-800 dark:via-gray-700 dark:to-blue-900 flex items-center justify-center p-8 border-b border-gray-100 dark:border-gray-800">
+                            <img src="{{ asset('logo/Logo-MyTix.svg') }}" alt="MyTix Logo"
                                 class="h-24 w-auto object-contain drop-shadow-lg transform group-hover:scale-110 transition duration-500">
                         </div>
                         <div class="p-6">
@@ -187,7 +185,7 @@ new class extends Component {
                     <div
                         class="group bg-white dark:bg-dark-card rounded-xl overflow-hidden border border-gray-200 dark:border-gray-800 hover:shadow-xl hover:border-primary/50 transition duration-300">
                         <div
-                            class="h-48 bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center text-white text-4xl">
+                            class="h-48 bg-linear-to-br from-emerald-500 to-teal-600 flex items-center justify-center text-white text-4xl">
                             🏫
                         </div>
                         <div class="p-6">
@@ -201,7 +199,7 @@ new class extends Component {
                                 disposisi kepala sekolah.
                             </p>
                             <div class="flex gap-2 text-xs text-gray-500 font-mono">
-                                <span>#Livewire</span> <span>#Tailwind</span>
+                                <span>#Livewire</span> <span>#TailwindCSS</span>
                             </div>
                         </div>
                     </div>
@@ -209,7 +207,7 @@ new class extends Component {
                     <div
                         class="group bg-white dark:bg-dark-card rounded-xl overflow-hidden border border-gray-200 dark:border-gray-800 hover:shadow-xl hover:border-primary/50 transition duration-300">
                         <div
-                            class="h-48 bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center text-white text-4xl">
+                            class="h-48 bg-linear-to-br from-orange-500 to-red-500 flex items-center justify-center text-white text-4xl">
                             ⚡
                         </div>
                         <div class="p-6">
@@ -222,7 +220,8 @@ new class extends Component {
                                 Pengembangan online store untuk penjualan produk digital dengan sistem otomatisasi.
                             </p>
                             <div class="flex gap-2 text-xs text-gray-500 font-mono">
-                                <span>#PHP</span> <span>#PaymentGateway</span>
+                                <span>#Livewire</span> <span>#TailwindCSS</span>
+
                             </div>
                         </div>
                     </div>
@@ -230,8 +229,8 @@ new class extends Component {
                     <div
                         class="group bg-white dark:bg-dark-card rounded-xl overflow-hidden border border-gray-200 dark:border-gray-800 hover:shadow-xl hover:border-primary/50 transition duration-300">
                         <div
-                            class="h-48 bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center p-8">
-                            <img src="{{ asset('storage/logo/logo-Anadex.svg') }}" alt="Anadex Logo"
+                            class="h-48 bg-linear-to-br from-purple-500 to-pink-600 flex items-center justify-center p-8">
+                            <img src="{{ asset('logo/logo-Anadex.svg') }}" alt="Anadex Logo"
                                 class="h-24 w-auto object-contain drop-shadow-lg transform group-hover:scale-110 transition duration-500">
                         </div>
                         <div class="p-6">
@@ -249,10 +248,81 @@ new class extends Component {
                                 <div class="flex gap-2 text-xs text-gray-500 font-mono flex-wrap">
                                     <span>#Laravel</span> <span>#Livewire</span> <span>#TailwindCSS</span>
                                 </div>
-                                <a href="#" onclick="event.preventDefault()"
-                                    class="text-xs font-semibold text-gray-400 cursor-not-allowed flex items-center gap-1"
-                                    title="Belum open publik">
-                                    Segera Hadir <span class="text-xs">🔒</span>
+                                <a href="https://anadex.weareimagi.com/home" target="_blank"
+                                    class="text-xs font-semibold text-primary hover:underline flex items-center gap-1">
+                                    Lihat Web <span class="text-xs">&nearr;</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group bg-white dark:bg-dark-card rounded-xl overflow-hidden border border-gray-200 dark:border-gray-800 hover:shadow-xl hover:border-primary/50 transition duration-300">
+                        <div
+                            class="h-48 bg-slate-900 border-b border-gray-100 dark:border-gray-800 flex items-center justify-center p-8">
+                            <div
+                                class="flex items-center gap-2 transform group-hover:scale-110 transition duration-500">
+                                <svg class="w-10 h-10 drop-shadow-[0_0_8px_rgba(45,212,191,0.5)] shrink-0"
+                                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"
+                                        class="fill-teal-500/20 stroke-teal-500" stroke-width="1.5"
+                                        stroke-linejoin="round" />
+                                    <path d="M12 6L13.5 10.5L18 12L13.5 13.5L12 18L10.5 13.5L6 12L10.5 10.5L12 6Z"
+                                        class="fill-teal-400" />
+                                    <circle cx="12" cy="12" r="1.5" class="fill-white" />
+                                </svg>
+                                <span
+                                    class="text-3xl font-bold bg-linear-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent tracking-wide">HoyoDash</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-4">
+                                <h3 class="text-xl font-bold group-hover:text-primary transition">HoyoDash</h3>
+                                <span
+                                    class="bg-teal-100 dark:bg-teal-900 text-teal-800 dark:text-teal-200 text-xs px-2 py-1 rounded">Web
+                                    App</span>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-4"
+                                title="HoyoDash adalah sebuah dashboard interaktif berbasis web yang elegan dan modern untuk memantau statistik akun game HoYoverse Anda (Genshin Impact, Honkai: Star Rail, Honkai Impact 3rd, dan Zenless Zone Zero) dalam satu tempat.">
+                                Dashboard interaktif elegan untuk memantau statistik akun game HoYoverse (Genshin, HSR,
+                                HI3, ZZZ) dalam satu tempat.
+                            </p>
+                            <div class="flex justify-between items-end">
+                                <div class="flex gap-2 text-xs text-gray-500 font-mono flex-wrap">
+                                    <span>#Livewire</span> <span>#TailwindCSS</span>
+                                </div>
+                                <a href="https://hoyodash.vercel.app/" target="_blank"
+                                    class="text-xs font-semibold text-primary hover:underline flex items-center gap-1">
+                                    Lihat Web <span class="text-xs">&nearr;</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="group bg-white dark:bg-dark-card rounded-xl overflow-hidden border border-gray-200 dark:border-gray-800 hover:shadow-xl hover:border-primary/50 transition duration-300">
+                        <div
+                            class="h-48 bg-linear-to-br from-sky-400 to-white dark:from-sky-900 dark:to-gray-800 flex items-center justify-center p-8">
+                            <img src="{{ asset('logo/logo-lluvia.webp') }}" alt="Lluvia Logo"
+                                class="h-56 w-auto object-contain drop-shadow-xl transform group-hover:scale-110 transition duration-500">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-4">
+                                <h3 class="text-xl font-bold group-hover:text-primary transition">Lluvia</h3>
+                                <span
+                                    class="bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 text-xs px-2 py-1 rounded">Web
+                                    App</span>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-4"
+                                title="Website portofolio untuk group chika idols lokal Kalimantan Selatan.">
+                                Website portofolio untuk group chika idols lokal Kalimantan Selatan.
+                            </p>
+                            <div class="flex justify-between items-end">
+                                <div class="flex gap-2 text-xs text-gray-500 font-mono flex-wrap">
+                                    <span>#NuxtJS</span> <span>#TailwindCSS</span>
+                                </div>
+                                <a href="https://lluvia-project.vercel.app/" target="_blank"
+                                    class="text-xs font-semibold text-primary hover:underline flex items-center gap-1">
+                                    Lihat Web <span class="text-xs">&nearr;</span>
                                 </a>
                             </div>
                         </div>
@@ -261,7 +331,7 @@ new class extends Component {
                     <div
                         class="group bg-white dark:bg-dark-card rounded-xl overflow-hidden border border-gray-200 dark:border-gray-800 hover:shadow-xl hover:border-primary/50 transition duration-300 md:col-span-2 lg:col-span-3 flex flex-col md:flex-row">
                         <div class="h-48 md:h-auto md:w-64 bg-gray-800 flex items-center justify-center p-8">
-                            <img src="{{ asset('storage/logo/Logo-WeAreImagi.webp') }}" alt="WeAreImagi Logo"
+                            <img src="{{ asset('logo/Logo-WeAreImagi.webp') }}" alt="WeAreImagi Logo"
                                 class="h-24 w-auto object-contain transform group-hover:scale-110 transition duration-500">
                         </div>
                         <div class="p-6 flex flex-col justify-center flex-1">
@@ -300,70 +370,238 @@ new class extends Component {
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     @foreach ([
-                        ['date' => '04-01-2026', 'event' => 'HANABI MATSURI 2026', 'role' => 'Volunteer', 'color' => 'blue'],
-                        ['date' => '09-11-2025', 'event' => 'IMAGI 2', 'role' => 'Divisi Tiketing & Web Dev', 'color' => 'teal'],
-                        ['date' => '03-08-2025', 'event' => 'HanaCon Cosplay Convention 2025', 'role' => 'Volunteer', 'color' => 'indigo'],
-                        ['date' => '11-05-2025', 'event' => 'Break Time Fest : Be an Idol', 'role' => 'Divisi Tiketing & Web Dev', 'color' => 'pink'],
-                        ['date' => '06-04-2025', 'event' => 'Haru no Sakuragi', 'role' => 'Divisi Tiketing', 'color' => 'rose'],
-                        ['date' => '12-01-2025', 'event' => 'Hanabi Matsuri 2025', 'role' => 'Volunteer', 'color' => 'emerald'],
-                        ['date' => '22-12-2024', 'event' => 'IMAGI', 'role' => 'Divisi Tiketing & Web Dev', 'color' => 'cyan'],
-                        ['date' => '11-08-2024', 'event' => 'HanaCon 2024', 'role' => 'Volunteer', 'color' => 'sky'],
-                        ['date' => '27-04-2024', 'event' => 'Break Time Fest : Harmony of Idol', 'role' => 'Divisi Tiketing & Web Dev', 'color' => 'violet'],
-                        ['date' => '18-02-2024', 'event' => 'Fuyu no Yukikaze', 'role' => 'Divisi Tiketing', 'color' => 'fuchsia'],
-                        ['date' => '17-12-2023', 'event' => 'ROD 2023 "Across The Dream Sky"', 'role' => 'Divisi Tiketing & Web Dev', 'color' => 'orange'],
-                        ['date' => '10-09-2023', 'event' => 'Komikal 2', 'role' => 'Divisi Tiketing & Web Dev', 'color' => 'amber'],
-                        ['date' => '17-12-2022', 'event' => 'Reach Our Dream 2022', 'role' => 'Divisi Tiketing & App Dev', 'color' => 'red'],
-                        ['date' => '11-09-2022', 'event' => 'KOMIKAL', 'role' => 'Divisi Tiketing & App Dev', 'color' => 'yellow'],
-                        ['date' => '16-02-2020', 'event' => 'KPOP DANCE BATTLE ROYALE — BACK TO LOBBY', 'role' => 'Divisi Operator', 'color' => 'lime'],
-                        ['date' => '01-12-2019', 'event' => 'Banjarbaru DreamFest', 'role' => 'Volunteer (Cosplayer)', 'color' => 'green'],
-                        ['date' => '01-09-2019', 'event' => 'K-POP DANCE BATTLE ROYALE', 'role' => 'Divisi Dokumentasi', 'color' => 'blue'],
-                        ['date' => '05-05-2018', 'event' => 'Sakura Park ICGP', 'role' => 'Divisi Tiketing & Runner', 'color' => 'teal'],
-                        ['date' => '12-11-2017', 'event' => 'Yujo Matsuri', 'role' => 'Divisi Dokumentasi & Runner', 'color' => 'indigo'],
-                        ['date' => '29-10-2017', 'event' => 'Atarashii Cosplay Competitions', 'role' => 'Divisi Dokumentasi', 'color' => 'pink'],
-                        ['date' => '22-10-2017', 'event' => 'SHōRAI NO SEDAI', 'role' => 'Divisi Dokumentasi', 'color' => 'rose'],
-                    ] as $exp)
-                            @php
-                                $colors = [
-                                    'blue' => ['text' => 'text-blue-600', 'bg' => 'bg-blue-50', 'border' => 'border-blue-100', 'darkBg' => 'dark:bg-blue-900/30', 'darkText' => 'dark:text-blue-300', 'darkBorder' => 'dark:border-blue-800', 'from' => 'from-blue-500/10', 'to' => 'to-indigo-500/10', 'hoverBorder' => 'group-hover:border-blue-500/50'],
-                                    'teal' => ['text' => 'text-teal-600', 'bg' => 'bg-teal-50', 'border' => 'border-teal-100', 'darkBg' => 'dark:bg-teal-900/30', 'darkText' => 'dark:text-teal-300', 'darkBorder' => 'dark:border-teal-800', 'from' => 'from-teal-500/10', 'to' => 'to-emerald-500/10', 'hoverBorder' => 'group-hover:border-teal-500/50'],
-                                    'indigo' => ['text' => 'text-indigo-600', 'bg' => 'bg-indigo-50', 'border' => 'border-indigo-100', 'darkBg' => 'dark:bg-indigo-900/30', 'darkText' => 'dark:text-indigo-300', 'darkBorder' => 'dark:border-indigo-800', 'from' => 'from-indigo-500/10', 'to' => 'to-purple-500/10', 'hoverBorder' => 'group-hover:border-indigo-500/50'],
-                                    'pink' => ['text' => 'text-pink-600', 'bg' => 'bg-pink-50', 'border' => 'border-pink-100', 'darkBg' => 'dark:bg-pink-900/30', 'darkText' => 'dark:text-pink-300', 'darkBorder' => 'dark:border-pink-800', 'from' => 'from-pink-500/10', 'to' => 'to-rose-500/10', 'hoverBorder' => 'group-hover:border-pink-500/50'],
-                                    'rose' => ['text' => 'text-rose-600', 'bg' => 'bg-rose-50', 'border' => 'border-rose-100', 'darkBg' => 'dark:bg-rose-900/30', 'darkText' => 'dark:text-rose-300', 'darkBorder' => 'dark:border-rose-800', 'from' => 'from-rose-500/10', 'to' => 'to-pink-500/10', 'hoverBorder' => 'group-hover:border-rose-500/50'],
-                                    'emerald' => ['text' => 'text-emerald-600', 'bg' => 'bg-emerald-50', 'border' => 'border-emerald-100', 'darkBg' => 'dark:bg-emerald-900/30', 'darkText' => 'dark:text-emerald-300', 'darkBorder' => 'dark:border-emerald-800', 'from' => 'from-emerald-500/10', 'to' => 'to-teal-500/10', 'hoverBorder' => 'group-hover:border-emerald-500/50'],
-                                    'cyan' => ['text' => 'text-cyan-600', 'bg' => 'bg-cyan-50', 'border' => 'border-cyan-100', 'darkBg' => 'dark:bg-cyan-900/30', 'darkText' => 'dark:text-cyan-300', 'darkBorder' => 'dark:border-cyan-800', 'from' => 'from-cyan-500/10', 'to' => 'to-blue-500/10', 'hoverBorder' => 'group-hover:border-cyan-500/50'],
-                                    'sky' => ['text' => 'text-sky-600', 'bg' => 'bg-sky-50', 'border' => 'border-sky-100', 'darkBg' => 'dark:bg-sky-900/30', 'darkText' => 'dark:text-sky-300', 'darkBorder' => 'dark:border-sky-800', 'from' => 'from-sky-500/10', 'to' => 'to-blue-500/10', 'hoverBorder' => 'group-hover:border-sky-500/50'],
-                                    'violet' => ['text' => 'text-violet-600', 'bg' => 'bg-violet-50', 'border' => 'border-violet-100', 'darkBg' => 'dark:bg-violet-900/30', 'darkText' => 'dark:text-violet-300', 'darkBorder' => 'dark:border-violet-800', 'from' => 'from-violet-500/10', 'to' => 'to-purple-500/10', 'hoverBorder' => 'group-hover:border-violet-500/50'],
-                                    'fuchsia' => ['text' => 'text-fuchsia-600', 'bg' => 'bg-fuchsia-50', 'border' => 'border-fuchsia-100', 'darkBg' => 'dark:bg-fuchsia-900/30', 'darkText' => 'dark:text-fuchsia-300', 'darkBorder' => 'dark:border-fuchsia-800', 'from' => 'from-fuchsia-500/10', 'to' => 'to-pink-500/10', 'hoverBorder' => 'group-hover:border-fuchsia-500/50'],
-                                    'orange' => ['text' => 'text-orange-600', 'bg' => 'bg-orange-50', 'border' => 'border-orange-100', 'darkBg' => 'dark:bg-orange-900/30', 'darkText' => 'dark:text-orange-300', 'darkBorder' => 'dark:border-orange-800', 'from' => 'from-orange-500/10', 'to' => 'to-red-500/10', 'hoverBorder' => 'group-hover:border-orange-500/50'],
-                                    'amber' => ['text' => 'text-amber-600', 'bg' => 'bg-amber-50', 'border' => 'border-amber-100', 'darkBg' => 'dark:bg-amber-900/30', 'darkText' => 'dark:text-amber-300', 'darkBorder' => 'dark:border-amber-800', 'from' => 'from-amber-500/10', 'to' => 'to-orange-500/10', 'hoverBorder' => 'group-hover:border-amber-500/50'],
-                                    'red' => ['text' => 'text-red-600', 'bg' => 'bg-red-50', 'border' => 'border-red-100', 'darkBg' => 'dark:bg-red-900/30', 'darkText' => 'dark:text-red-300', 'darkBorder' => 'dark:border-red-800', 'from' => 'from-red-500/10', 'to' => 'to-rose-500/10', 'hoverBorder' => 'group-hover:border-red-500/50'],
-                                    'yellow' => ['text' => 'text-yellow-600', 'bg' => 'bg-yellow-50', 'border' => 'border-yellow-100', 'darkBg' => 'dark:bg-yellow-900/30', 'darkText' => 'dark:text-yellow-300', 'darkBorder' => 'dark:border-yellow-800', 'from' => 'from-yellow-500/10', 'to' => 'to-amber-500/10', 'hoverBorder' => 'group-hover:border-yellow-500/50'],
-                                    'lime' => ['text' => 'text-lime-600', 'bg' => 'bg-lime-50', 'border' => 'border-lime-100', 'darkBg' => 'dark:bg-lime-900/30', 'darkText' => 'dark:text-lime-300', 'darkBorder' => 'dark:border-lime-800', 'from' => 'from-lime-500/10', 'to' => 'to-green-500/10', 'hoverBorder' => 'group-hover:border-lime-500/50'],
-                                    'green' => ['text' => 'text-green-600', 'bg' => 'bg-green-50', 'border' => 'border-green-100', 'darkBg' => 'dark:bg-green-900/30', 'darkText' => 'dark:text-green-300', 'darkBorder' => 'dark:border-green-800', 'from' => 'from-green-500/10', 'to' => 'to-emerald-500/10', 'hoverBorder' => 'group-hover:border-green-500/50'],
-                                ];
-                                $theme = $colors[$exp['color']] ?? $colors['blue'];
-                            @endphp
-                        <div class="group bg-gray-50 dark:bg-dark-card border border-gray-100 dark:border-gray-800 rounded-xl p-6 hover:shadow-xl hover:-translate-y-1 transition duration-300 relative overflow-hidden flex flex-col justify-between {{ $theme['hoverBorder'] }}">
-                                        <div class="absolute top-0 right-0 w-24 h-24 bg-linear-to-br {{ $theme['from'] }} {{ $theme['to'] }} rounded-bl-full -mr-8 -mt-8 transition-transform group-hover:scale-110"></div>
+        ['date' => '04-01-2026', 'event' => 'HANABI MATSURI 2026', 'role' => 'Volunteer', 'color' => 'blue'],
+        ['date' => '09-11-2025', 'event' => 'IMAGI 2', 'role' => 'Divisi Tiketing & Web Dev', 'color' => 'teal'],
+        ['date' => '03-08-2025', 'event' => 'HanaCon Cosplay Convention 2025', 'role' => 'Volunteer', 'color' => 'indigo'],
+        ['date' => '11-05-2025', 'event' => 'Break Time Fest : Be an Idol', 'role' => 'Divisi Tiketing & Web Dev', 'color' => 'pink'],
+        ['date' => '06-04-2025', 'event' => 'Haru no Sakuragi', 'role' => 'Divisi Tiketing', 'color' => 'rose'],
+        ['date' => '12-01-2025', 'event' => 'Hanabi Matsuri 2025', 'role' => 'Volunteer', 'color' => 'emerald'],
+        ['date' => '22-12-2024', 'event' => 'IMAGI', 'role' => 'Divisi Tiketing & Web Dev', 'color' => 'cyan'],
+        ['date' => '11-08-2024', 'event' => 'HanaCon 2024', 'role' => 'Volunteer', 'color' => 'sky'],
+        ['date' => '27-04-2024', 'event' => 'Break Time Fest : Harmony of Idol', 'role' => 'Divisi Tiketing & Web Dev', 'color' => 'violet'],
+        ['date' => '18-02-2024', 'event' => 'Fuyu no Yukikaze', 'role' => 'Divisi Tiketing', 'color' => 'fuchsia'],
+        ['date' => '17-12-2023', 'event' => 'ROD 2023 "Across The Dream Sky"', 'role' => 'Divisi Tiketing & Web Dev', 'color' => 'orange'],
+        ['date' => '10-09-2023', 'event' => 'Komikal 2', 'role' => 'Divisi Tiketing & Web Dev', 'color' => 'amber'],
+        ['date' => '17-12-2022', 'event' => 'Reach Our Dream 2022', 'role' => 'Divisi Tiketing & App Dev', 'color' => 'red'],
+        ['date' => '11-09-2022', 'event' => 'KOMIKAL', 'role' => 'Divisi Tiketing & App Dev', 'color' => 'yellow'],
+        ['date' => '16-02-2020', 'event' => 'KPOP DANCE BATTLE ROYALE — BACK TO LOBBY', 'role' => 'Divisi Operator', 'color' => 'lime'],
+        ['date' => '01-12-2019', 'event' => 'Banjarbaru DreamFest', 'role' => 'Volunteer (Cosplayer)', 'color' => 'green'],
+        ['date' => '01-09-2019', 'event' => 'K-POP DANCE BATTLE ROYALE', 'role' => 'Divisi Dokumentasi', 'color' => 'blue'],
+        ['date' => '05-05-2018', 'event' => 'Sakura Park ICGP', 'role' => 'Divisi Tiketing & Runner', 'color' => 'teal'],
+        ['date' => '12-11-2017', 'event' => 'Yujo Matsuri', 'role' => 'Divisi Dokumentasi & Runner', 'color' => 'indigo'],
+        ['date' => '29-10-2017', 'event' => 'Atarashii Cosplay Competitions', 'role' => 'Divisi Dokumentasi', 'color' => 'pink'],
+        ['date' => '22-10-2017', 'event' => 'SHōRAI NO SEDAI', 'role' => 'Divisi Dokumentasi', 'color' => 'rose'],
+    ] as $exp)
+                        @php
+                            $colors = [
+                                'blue' => [
+                                    'text' => 'text-blue-600',
+                                    'bg' => 'bg-blue-50',
+                                    'border' => 'border-blue-100',
+                                    'darkBg' => 'dark:bg-blue-900/30',
+                                    'darkText' => 'dark:text-blue-300',
+                                    'darkBorder' => 'dark:border-blue-800',
+                                    'from' => 'from-blue-500/10',
+                                    'to' => 'to-indigo-500/10',
+                                    'hoverBorder' => 'group-hover:border-blue-500/50',
+                                ],
+                                'teal' => [
+                                    'text' => 'text-teal-600',
+                                    'bg' => 'bg-teal-50',
+                                    'border' => 'border-teal-100',
+                                    'darkBg' => 'dark:bg-teal-900/30',
+                                    'darkText' => 'dark:text-teal-300',
+                                    'darkBorder' => 'dark:border-teal-800',
+                                    'from' => 'from-teal-500/10',
+                                    'to' => 'to-emerald-500/10',
+                                    'hoverBorder' => 'group-hover:border-teal-500/50',
+                                ],
+                                'indigo' => [
+                                    'text' => 'text-indigo-600',
+                                    'bg' => 'bg-indigo-50',
+                                    'border' => 'border-indigo-100',
+                                    'darkBg' => 'dark:bg-indigo-900/30',
+                                    'darkText' => 'dark:text-indigo-300',
+                                    'darkBorder' => 'dark:border-indigo-800',
+                                    'from' => 'from-indigo-500/10',
+                                    'to' => 'to-purple-500/10',
+                                    'hoverBorder' => 'group-hover:border-indigo-500/50',
+                                ],
+                                'pink' => [
+                                    'text' => 'text-pink-600',
+                                    'bg' => 'bg-pink-50',
+                                    'border' => 'border-pink-100',
+                                    'darkBg' => 'dark:bg-pink-900/30',
+                                    'darkText' => 'dark:text-pink-300',
+                                    'darkBorder' => 'dark:border-pink-800',
+                                    'from' => 'from-pink-500/10',
+                                    'to' => 'to-rose-500/10',
+                                    'hoverBorder' => 'group-hover:border-pink-500/50',
+                                ],
+                                'rose' => [
+                                    'text' => 'text-rose-600',
+                                    'bg' => 'bg-rose-50',
+                                    'border' => 'border-rose-100',
+                                    'darkBg' => 'dark:bg-rose-900/30',
+                                    'darkText' => 'dark:text-rose-300',
+                                    'darkBorder' => 'dark:border-rose-800',
+                                    'from' => 'from-rose-500/10',
+                                    'to' => 'to-pink-500/10',
+                                    'hoverBorder' => 'group-hover:border-rose-500/50',
+                                ],
+                                'emerald' => [
+                                    'text' => 'text-emerald-600',
+                                    'bg' => 'bg-emerald-50',
+                                    'border' => 'border-emerald-100',
+                                    'darkBg' => 'dark:bg-emerald-900/30',
+                                    'darkText' => 'dark:text-emerald-300',
+                                    'darkBorder' => 'dark:border-emerald-800',
+                                    'from' => 'from-emerald-500/10',
+                                    'to' => 'to-teal-500/10',
+                                    'hoverBorder' => 'group-hover:border-emerald-500/50',
+                                ],
+                                'cyan' => [
+                                    'text' => 'text-cyan-600',
+                                    'bg' => 'bg-cyan-50',
+                                    'border' => 'border-cyan-100',
+                                    'darkBg' => 'dark:bg-cyan-900/30',
+                                    'darkText' => 'dark:text-cyan-300',
+                                    'darkBorder' => 'dark:border-cyan-800',
+                                    'from' => 'from-cyan-500/10',
+                                    'to' => 'to-blue-500/10',
+                                    'hoverBorder' => 'group-hover:border-cyan-500/50',
+                                ],
+                                'sky' => [
+                                    'text' => 'text-sky-600',
+                                    'bg' => 'bg-sky-50',
+                                    'border' => 'border-sky-100',
+                                    'darkBg' => 'dark:bg-sky-900/30',
+                                    'darkText' => 'dark:text-sky-300',
+                                    'darkBorder' => 'dark:border-sky-800',
+                                    'from' => 'from-sky-500/10',
+                                    'to' => 'to-blue-500/10',
+                                    'hoverBorder' => 'group-hover:border-sky-500/50',
+                                ],
+                                'violet' => [
+                                    'text' => 'text-violet-600',
+                                    'bg' => 'bg-violet-50',
+                                    'border' => 'border-violet-100',
+                                    'darkBg' => 'dark:bg-violet-900/30',
+                                    'darkText' => 'dark:text-violet-300',
+                                    'darkBorder' => 'dark:border-violet-800',
+                                    'from' => 'from-violet-500/10',
+                                    'to' => 'to-purple-500/10',
+                                    'hoverBorder' => 'group-hover:border-violet-500/50',
+                                ],
+                                'fuchsia' => [
+                                    'text' => 'text-fuchsia-600',
+                                    'bg' => 'bg-fuchsia-50',
+                                    'border' => 'border-fuchsia-100',
+                                    'darkBg' => 'dark:bg-fuchsia-900/30',
+                                    'darkText' => 'dark:text-fuchsia-300',
+                                    'darkBorder' => 'dark:border-fuchsia-800',
+                                    'from' => 'from-fuchsia-500/10',
+                                    'to' => 'to-pink-500/10',
+                                    'hoverBorder' => 'group-hover:border-fuchsia-500/50',
+                                ],
+                                'orange' => [
+                                    'text' => 'text-orange-600',
+                                    'bg' => 'bg-orange-50',
+                                    'border' => 'border-orange-100',
+                                    'darkBg' => 'dark:bg-orange-900/30',
+                                    'darkText' => 'dark:text-orange-300',
+                                    'darkBorder' => 'dark:border-orange-800',
+                                    'from' => 'from-orange-500/10',
+                                    'to' => 'to-red-500/10',
+                                    'hoverBorder' => 'group-hover:border-orange-500/50',
+                                ],
+                                'amber' => [
+                                    'text' => 'text-amber-600',
+                                    'bg' => 'bg-amber-50',
+                                    'border' => 'border-amber-100',
+                                    'darkBg' => 'dark:bg-amber-900/30',
+                                    'darkText' => 'dark:text-amber-300',
+                                    'darkBorder' => 'dark:border-amber-800',
+                                    'from' => 'from-amber-500/10',
+                                    'to' => 'to-orange-500/10',
+                                    'hoverBorder' => 'group-hover:border-amber-500/50',
+                                ],
+                                'red' => [
+                                    'text' => 'text-red-600',
+                                    'bg' => 'bg-red-50',
+                                    'border' => 'border-red-100',
+                                    'darkBg' => 'dark:bg-red-900/30',
+                                    'darkText' => 'dark:text-red-300',
+                                    'darkBorder' => 'dark:border-red-800',
+                                    'from' => 'from-red-500/10',
+                                    'to' => 'to-rose-500/10',
+                                    'hoverBorder' => 'group-hover:border-red-500/50',
+                                ],
+                                'yellow' => [
+                                    'text' => 'text-yellow-600',
+                                    'bg' => 'bg-yellow-50',
+                                    'border' => 'border-yellow-100',
+                                    'darkBg' => 'dark:bg-yellow-900/30',
+                                    'darkText' => 'dark:text-yellow-300',
+                                    'darkBorder' => 'dark:border-yellow-800',
+                                    'from' => 'from-yellow-500/10',
+                                    'to' => 'to-amber-500/10',
+                                    'hoverBorder' => 'group-hover:border-yellow-500/50',
+                                ],
+                                'lime' => [
+                                    'text' => 'text-lime-600',
+                                    'bg' => 'bg-lime-50',
+                                    'border' => 'border-lime-100',
+                                    'darkBg' => 'dark:bg-lime-900/30',
+                                    'darkText' => 'dark:text-lime-300',
+                                    'darkBorder' => 'dark:border-lime-800',
+                                    'from' => 'from-lime-500/10',
+                                    'to' => 'to-green-500/10',
+                                    'hoverBorder' => 'group-hover:border-lime-500/50',
+                                ],
+                                'green' => [
+                                    'text' => 'text-green-600',
+                                    'bg' => 'bg-green-50',
+                                    'border' => 'border-green-100',
+                                    'darkBg' => 'dark:bg-green-900/30',
+                                    'darkText' => 'dark:text-green-300',
+                                    'darkBorder' => 'dark:border-green-800',
+                                    'from' => 'from-green-500/10',
+                                    'to' => 'to-emerald-500/10',
+                                    'hoverBorder' => 'group-hover:border-green-500/50',
+                                ],
+                            ];
+                            $theme = $colors[$exp['color']] ?? $colors['blue'];
+                        @endphp
+                        <div
+                            class="group bg-gray-50 dark:bg-dark-card border border-gray-100 dark:border-gray-800 rounded-xl p-6 hover:shadow-xl hover:-translate-y-1 transition duration-300 relative overflow-hidden flex flex-col justify-between {{ $theme['hoverBorder'] }}">
+                            <div
+                                class="absolute top-0 right-0 w-24 h-24 bg-linear-to-br {{ $theme['from'] }} {{ $theme['to'] }} rounded-bl-full -mr-8 -mt-8 transition-transform group-hover:scale-110">
+                            </div>
 
-                                        <div class="relative z-10 flex-1">
-                                            <span class="inline-block px-3 py-1 text-xs font-bold font-mono shadow-sm mb-4 rounded-full border {{ $theme['text'] }} {{ $theme['bg'] }} {{ $theme['border'] }} {{ $theme['darkBg'] }} {{ $theme['darkText'] }} {{ $theme['darkBorder'] }}">
-                                                {{ $exp['date'] }}
-                                            </span>
-                                            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2 leading-tight">
-                                                {{ $exp['event'] }}
-                                            </h3>
-                                        </div>
+                            <div class="relative z-10 flex-1">
+                                <span
+                                    class="inline-block px-3 py-1 text-xs font-bold font-mono shadow-sm mb-4 rounded-full border {{ $theme['text'] }} {{ $theme['bg'] }} {{ $theme['border'] }} {{ $theme['darkBg'] }} {{ $theme['darkText'] }} {{ $theme['darkBorder'] }}">
+                                    {{ $exp['date'] }}
+                                </span>
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2 leading-tight">
+                                    {{ $exp['event'] }}
+                                </h3>
+                            </div>
 
-                                        <div class="relative z-10 mt-4 pt-4 border-t border-gray-200 dark:border-gray-800">
-                                            <p class="text-sm font-medium text-gray-500 dark:text-gray-400 flex items-center gap-2">
-                                                <svg class="w-4 h-4 {{ $theme['text'] }}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                                                </svg>
-                                                {{ $exp['role'] }}
-                                            </p>
-                                        </div>
-                                    </div>
+                            <div class="relative z-10 mt-4 pt-4 border-t border-gray-200 dark:border-gray-800">
+                                <p
+                                    class="text-sm font-medium text-gray-500 dark:text-gray-400 flex items-center gap-2">
+                                    <svg class="w-4 h-4 {{ $theme['text'] }}" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z">
+                                        </path>
+                                    </svg>
+                                    {{ $exp['role'] }}
+                                </p>
+                            </div>
+                        </div>
                     @endforeach
                 </div>
             </div>
